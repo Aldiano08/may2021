@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.924 sec <<< FAILURE! - in TestSuite
+testLoginAPIWithInvalidCredentials(com.jakartalabs.may2021.APITests)  Time elapsed: 0.087 sec  <<< FAILURE!
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.jakartalabs.may2021.APITests.testLoginAPIWithInvalidCredentials(APITests.java:22)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.jakartalabs.may2021.APITests.testLoginAPIWithInvalidCredentials(APITests.java:22)
+
+testLoginAPI(com.jakartalabs.may2021.APITests)  Time elapsed: 0.361 sec  <<< FAILURE!
+java.net.URISyntaxException: Illegal character in path at index 5: error extracting value
+	at com.jakartalabs.may2021.APITests.testLoginAPI(APITests.java:36)
+
+testDashboardAPI(com.jakartalabs.may2021.APITests)  Time elapsed: 0.028 sec  <<< FAILURE!
+java.net.URISyntaxException: Illegal character in path at index 5: error extracting value
+	at com.jakartalabs.may2021.APITests.testDashboardAPI(APITests.java:51)
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Web Test Suite]" parallel="methods">
+  <test thread-count="1" verbose="0" name="Web Tests(failed)" parallel="methods">
+    <classes>
+      <class name="com.jakartalabs.may2021.APITests">
+        <methods>
+          <include name="testLoginAPI"/>
+          <include name="testLoginAPIWithInvalidCredentials"/>
+          <include name="testDashboardAPI"/>
+        </methods>
+      </class> <!-- com.jakartalabs.may2021.APITests -->
+    </classes>
+  </test> <!-- Web Tests(failed) -->
+</suite> <!-- Failed suite [Web Test Suite] -->
